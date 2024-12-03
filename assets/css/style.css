@@ -380,6 +380,8 @@ header .btn-group {
 }
 
 .hero .right { display: none; }
+.hero-img:hover{
+transform:"scale()1.5";}
 
 
 
