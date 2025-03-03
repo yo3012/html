@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SimpleBlog - Ankur Malviya's Personal Blog</title>
+  <title>Ankur's Personal Blog</title>
 
   <!--
     - favicon
@@ -16,6 +16,7 @@
     - custom css link
   -->
   <link rel="stylesheet" href="./assets/css/style.css">
+  <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">-->
 
   <!--
     - google font link
@@ -112,16 +113,21 @@
             <p class="h3 nav-title">Topics</p>
 
             <ul>
+			
+			  <li class="nav-item">
+                <a href="javascript:filterBlogCards('all');" class="nav-link">View All</a>
+              </li>
+			  
               <li class="nav-item">
-                <a href="#" class="nav-link">Database</a>
+                <a href="javascript:filterBlogCards('database');" class="nav-link">Database</a>
               </li>
 
               <li class="nav-item">
-                <a href="#" class="nav-link">Accessibility</a>
+                <a href="javascript:filterBlogCards('accessibility');" class="nav-link">Accessibility</a>
               </li>
 
               <li class="nav-item">
-                <a href="#" class="nav-link">Web Performance</a>
+                <a href="javascript:filterBlogCards('web');" class="nav-link">Web Performance</a>
               </li>
             </ul>
 
@@ -153,13 +159,13 @@
 
           <h1 class="h1">
             Hi, I'm <b>Ankur&nbsp;Malviya</b>.
-            <br>Web Developer
+            <br>Full Stack Developer
           </h1>
 
-          <p class="h3">
-            Specialized in <abbr title="Accessibility">a11y</abbr>
-            and Core Web Vitals
-          </p>
+          <!--<p class="h3">
+            Specialized in <abbr title="Java">Java</abbr>
+            and Web Technologies
+          </p>-->
 
           <div class="btn-group">
             <a href="#" class="btn btn-primary">Contact Me</a>
@@ -172,7 +178,7 @@
 
           <div class="pattern-bg"></div>
           <div class="img-box">
-            <img src="./assets/images/hero.png" alt="Julia Walker" class="hero-img">
+            <img src="./assets/images/hero.png" alt="Ankur Malviya" class="hero-img">
             <div class="shape shape-1"></div>
             <div class="shape shape-2"></div>
           </div>
@@ -201,7 +207,7 @@
 
           <div class="blog-card-group">
 
-            <div class="blog-card">
+            <div class="blog-card database">
 
               <div class="blog-card-banner">
                 <img src="./assets/images/blog-1.png" alt="Building microservices with Dropwizard, MongoDB & Docker"
@@ -229,11 +235,11 @@
                 <div class="wrapper-flex">
 
                   <div class="profile-wrapper">
-                    <img src="./assets/images/author.png" alt="Julia Walker" width="50">
+                    <img src="./assets/images/author.png" alt="Ankur Malviya" width="50">
                   </div>
 
                   <div class="wrapper">
-                    <a href="#" class="h4">Julia Walker</a>
+                    <a href="#" class="h4">Ankur Malviya</a>
 
                     <p class="text-sm">
                       <time datetime="2022-01-17">Jan 17, 2022</time>
@@ -250,7 +256,7 @@
             </div>
 
 
-            <div class="blog-card">
+            <div class="blog-card web">
 
               <div class="blog-card-banner">
                 <img src="./assets/images/blog-2.png" alt="Fast web page loading on a $20 feature phone" width="250"
@@ -272,11 +278,11 @@
                 <div class="wrapper-flex">
 
                   <div class="profile-wrapper">
-                    <img src="./assets/images/author.png" alt="Julia walker" width="50">
+                    <img src="./assets/images/author.png" alt="Ankur Malviya" width="50">
                   </div>
 
                   <div class="wrapper">
-                    <a href="#" class="h4">Julia Walker</a>
+                    <a href="#" class="h4">Ankur Malviya</a>
 
                     <p class="text-sm">
                       <time datetime="2021-12-10">Dec 10, 2021</time>
@@ -293,7 +299,7 @@
             </div>
 
 
-            <div class="blog-card">
+            <div class="blog-card accessibility">
 
               <div class="blog-card-banner">
                 <img src="./assets/images/blog-3.png" alt="Accessibility Tips for Web Developers" width="250"
@@ -317,11 +323,11 @@
                 <div class="wrapper-flex">
 
                   <div class="profile-wrapper">
-                    <img src="./assets/images/author.png" alt="Julia walker" width="50">
+                    <img src="./assets/images/author.png" alt="Ankur Malviya" width="50">
                   </div>
 
                   <div class="wrapper">
-                    <a href="#" class="h4">Julia Walker</a>
+                    <a href="#" class="h4">Ankur Malviya</a>
 
                     <p class="text-sm">
                       <time datetime="2021-11-28">Nov 28, 2021</time>
@@ -338,7 +344,7 @@
             </div>
 
 
-            <div class="blog-card">
+            <div class="blog-card database">
 
               <div class="blog-card-banner">
                 <img src="./assets/images/blog-4.png" alt="Dynamically Securing Databases using Hashicorp Vault"
@@ -362,11 +368,11 @@
                 <div class="wrapper-flex">
 
                   <div class="profile-wrapper">
-                    <img src="./assets/images/author.png" alt="Julia walker" width="50">
+                    <img src="./assets/images/author.png" alt="Ankur Malviya" width="50">
                   </div>
 
                   <div class="wrapper">
-                    <a href="#" class="h4">Julia Walker</a>
+                    <a href="#" class="h4">Ankur Malviya</a>
 
                     <p class="text-sm">
                       <time datetime="2021-11-20">Nov 20, 2021</time>
@@ -383,7 +389,7 @@
             </div>
 
 
-            <div class="blog-card">
+            <div class="blog-card web">
 
               <div class="blog-card-banner">
                 <img src="./assets/images/blog-5.png"
@@ -409,11 +415,11 @@
                 <div class="wrapper-flex">
 
                   <div class="profile-wrapper">
-                    <img src="./assets/images/author.png" alt="Julia walker" width="50">
+                    <img src="./assets/images/author.png" alt="Ankur Malviya" width="50">
                   </div>
 
                   <div class="wrapper">
-                    <a href="#" class="h4">Julia Walker</a>
+                    <a href="#" class="h4">Ankur Malviya</a>
 
                     <p class="text-sm">
                       <time datetime="2021-11-10">Nov 10, 2021</time>
@@ -430,7 +436,7 @@
             </div>
 
 
-            <div class="blog-card">
+            <div class="blog-card accessibility">
 
               <div class="blog-card-banner">
                 <img src="./assets/images/blog-6.png"
@@ -456,11 +462,11 @@
                 <div class="wrapper-flex">
 
                   <div class="profile-wrapper">
-                    <img src="./assets/images/author.png" alt="Julia walker" width="50">
+                    <img src="./assets/images/author.png" alt="Ankur Malviya" width="50">
                   </div>
 
                   <div class="wrapper">
-                    <a href="#" class="h4">Julia Walker</a>
+                    <a href="#" class="h4">Ankur Malviya</a>
 
                     <p class="text-sm">
                       <time datetime="2021-10-25">Oct 25, 2021</time>
@@ -477,7 +483,7 @@
             </div>
 
 
-            <div class="blog-card">
+            <div class="blog-card database">
 
               <div class="blog-card-banner">
                 <img src="./assets/images/blog-7.png"
@@ -502,11 +508,11 @@
                 <div class="wrapper-flex">
 
                   <div class="profile-wrapper">
-                    <img src="./assets/images/author.png" alt="Julia walker" width="50">
+                    <img src="./assets/images/author.png" alt="Ankur Malviya" width="50">
                   </div>
 
                   <div class="wrapper">
-                    <a href="#" class="h4">Julia Walker</a>
+                    <a href="#" class="h4">Ankur Malviya</a>
 
                     <p class="text-sm">
                       <time datetime="2021-10-15">Oct 15, 2021</time>
@@ -523,7 +529,7 @@
             </div>
 
 
-            <div class="blog-card">
+            <div class="blog-card web">
 
               <div class="blog-card-banner">
                 <img src="./assets/images/blog-8.png" alt="Monitoring Performance with the PageSpeed Insights API"
@@ -547,11 +553,11 @@
                 <div class="wrapper-flex">
 
                   <div class="profile-wrapper">
-                    <img src="./assets/images/author.png" alt="Julia walker" width="50">
+                    <img src="./assets/images/author.png" alt="Ankur Malviya" width="50">
                   </div>
 
                   <div class="wrapper">
-                    <a href="#" class="h4">Julia Walker</a>
+                    <a href="#" class="h4">Ankur Malviya</a>
 
                     <p class="text-sm">
                       <time datetime="2021-10-03">Oct 3, 2021</time>
@@ -568,7 +574,7 @@
             </div>
 
 
-            <div class="blog-card">
+            <div class="blog-card accessibility">
 
               <div class="blog-card-banner">
                 <img src="./assets/images/blog-9.png" alt="The best web accessibility tools for developers in 2021"
@@ -592,11 +598,11 @@
                 <div class="wrapper-flex">
 
                   <div class="profile-wrapper">
-                    <img src="./assets/images/author.png" alt="Julia walker" width="50">
+                    <img src="./assets/images/author.png" alt="Ankur Malviya" width="50">
                   </div>
 
                   <div class="wrapper">
-                    <a href="#" class="h4">Julia Walker</a>
+                    <a href="#" class="h4">Ankur Malviya</a>
 
                     <p class="text-sm">
                       <time datetime="2021-09-13">Sep 13, 2021</time>
@@ -613,7 +619,7 @@
             </div>
 
 
-            <div class="blog-card">
+            <div class="blog-card database">
 
               <div class="blog-card-banner">
                 <img src="./assets/images/blog-10.png"
@@ -638,11 +644,11 @@
                 <div class="wrapper-flex">
 
                   <div class="profile-wrapper">
-                    <img src="./assets/images/author.png" alt="Julia walker" width="50">
+                    <img src="./assets/images/author.png" alt="Ankur Malviya" width="50">
                   </div>
 
                   <div class="wrapper">
-                    <a href="#" class="h4">Julia Walker</a>
+                    <a href="#" class="h4">Ankur Malviya</a>
 
                     <p class="text-sm">
                       <time datetime="2021-09-21">Sep 21, 2021</time>
@@ -660,7 +666,7 @@
 
           </div>
 
-          <button class="btn load-more">Load More</button>
+          <button class="btn load-more" disabled style="pointer-events: none; opacity: 0.5;">Load More</button>
 
         </div>
 
@@ -677,8 +683,16 @@
           <div class="topics">
 
             <h2 class="h2">Topics</h2>
+			
+			<a href="javascript:filterBlogCards('all');" class="topic-btn">
+              <div class="icon-box">
+                <ion-icon name="server-outline"></ion-icon>
+              </div>
 
-            <a href="#" class="topic-btn">
+              <p>View All</p>
+            </a>
+
+            <a href="javascript:filterBlogCards('database');" class="topic-btn">
               <div class="icon-box">
                 <ion-icon name="server-outline"></ion-icon>
               </div>
@@ -686,7 +700,7 @@
               <p>Database</p>
             </a>
 
-            <a href="#" class="topic-btn">
+            <a href="javascript:filterBlogCards('accessibility');" class="topic-btn">
               <div class="icon-box">
                 <ion-icon name="accessibility-outline"></ion-icon>
               </div>
@@ -694,7 +708,7 @@
               <p>Accessibility</p>
             </a>
 
-            <a href="#" class="topic-btn">
+            <a href="javascript:filterBlogCards('web');" class="topic-btn">
               <div class="icon-box">
                 <ion-icon name="rocket-outline"></ion-icon>
               </div>
@@ -767,13 +781,13 @@
             <div class="wrapper">
 
               <p>
-                Subscribe to our newsletter to be among the first to keep up with the latest updates.
+                Subscribe to this newsletter to be among the first to keep up with the latest updates.
               </p>
 
               <form action="#">
                 <input type="email" name="email" placeholder="Email Address" required>
 
-                <button type="submit" class="btn btn-primary">Subscribe</button>
+                <button type="submit" class="btn btn-primary" disabled style="pointer-events: none; opacity: 0.5;">Subscribe</button>
               </form>
 
             </div>
@@ -860,7 +874,7 @@
     </div>
 
     <p class="copyright">
-      &copy; Copyright 2024 <a href="#">SimpleBlog</a>
+      &copy; Copyright 2024 <a href="#">Ankur's Blog</a>
     </p>
 
   </footer>
@@ -873,6 +887,27 @@
     - custom js link
   -->
   <script src="./assets/js/script.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+  <script>
+	
+	function filterBlogCards(filterVal) {
+		//event.preventDefault();
+		console.log('here for '+filterVal);
+		
+		var $mediaElements = $('.blog-card');
+		//var filterVal = $(this).data('filter');
+
+		if(filterVal === 'all'){
+		  $mediaElements.show();
+		}else{
+		   // hide all then filter the ones to show
+		   $mediaElements.hide().filter('.' + filterVal).show();
+		}
+		
+	}
+  </script>
 
   <!--
     - ionicon link
